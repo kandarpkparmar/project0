@@ -13,49 +13,51 @@
                 background-color: white;
             }
 
-            #text-search{
-                border: 2px solid;
-                padding: 10px;
-                border-radius: 15px;
-                width: 45%;
+            a{
+                float: right;
+                padding-right: 15px;
             }
 
-            #button{
-                background-color: #32a8a0;
-                border-radius: 12px;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
+            #google-img{
+                padding-right: 10px;
+            }
+
+            #text{
+                border: solid 1px black;
+                padding: 5px;
+                width: 45%;
+                border-radius: 35px;
+                border-collapse: collapse;
+            }
+
+            #btnsearch,#btnlucky{
+                background-color: lightgray;
+            }
+
+            #btnsearch{
+                margin-left: 38%;
+            }
+
+            #btnlucky{
+                margin-left: 20px;
             }
         </style>
 
     </head>
 
-    <body bgcolor="#d3d5e3">
-        <ul class="navbar-nav ml-auto">
-            <li>
-                <a href="googleimg.html">Google Image Search</a>
-            </li>
+    <body>
+        <a href="googleadvance.html">Google Advance Search</a>
+        <a href="googleimg.html" id="google-img">Google Images</a>
 
-            <li>
-                <a href="googleadvance.html">Google Advance Search</a>
-            </li>
-        </ul>
+        <img src="google.jpeg" style="padding-left: 30%;">
+        
 
-       <!---Image-->
-       <img src="google.jpeg">
-
-        <!---Form for Google Search-->
-        <form action="http://www.google.com/search">
-            <pre>
-            </pre>
-            <center><input type="text" placeholder="Google Search" name="q" id="text-search"></center>
-            <pre>
-            </pre>
-            <center><input type="submit" value="Search" id="button"></center>
+        <form action="https://google.com/search">
+            <center><input type="text" name="q" placeholder="Search" id="text"></center><br>
+            <pre></pre>
+            <input type="submit" value="Google Search" id="btnsearch">
+            <!--<input type="submit" value="I'm Feeling Lucky" id="btnlucky">-->
+            <input type="submit" name="btnI" value="I am Feeling Lucky" id="btnlucky">
         </form>
     </body>
 </html>
