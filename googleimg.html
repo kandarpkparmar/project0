@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Images</title>
+
+        <!----BOOTSTRAP---->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+        <!----CSS Styling---->
+        <style>
+            a{
+                float: right;
+                padding-right: 15px;
+            }
+
+            #text{
+                border: solid 1px black;
+                padding: 5px;
+                width: 45%;
+                border-radius: 35px;
+                border-collapse: collapse;
+            }
+
+            #btnsearch{
+                background-color: lightgray;
+                margin-left: 45%;
+            }
+        </style>
+    </head>
+    <body>
+        <!---Link to Google Search-->
+        <a href="googlesearch.html">Google Search</a>
+
+        <!---Image for Google Images Logo--->
+        <img src="google-img.jpeg" style="padding-left: 28%;">
+
+        <!--Form for Search-->
+        <form action="http://images.google.com/images">
+           <!---- <input type="text" name="q">
+            <input type="submit" value="Search Google Images">-->
+
+            <center><input type="text" name="q" placeholder="Search" id="text"></center><br>
+            <pre></pre>
+            <input type="submit" value="Image Search" id="btnsearch">
+        </form>
+    </body>
+</html>
